@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Pacifico&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+*{
+    color: var(--secondary-color);
+}
+
+/* ---------------------------------
+   1. NAVIGATION
+-----------------------------------*/
+/* NAVIGATION DESKTOP */
+.nav-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #202124;
+    font-size: 16px;
+    padding: 5px 8px;
+    transition: 0.3s;
+    
+}
+
+.nav-links a:hover {
+    color: #1a73e8;
+}
+
+
+/* ---------------------------------
+   2. LAYOUT GLOBAL
+-----------------------------------*/
+.layout-global {
+    padding: 50px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* ---------------------------------
+   4. TITRES & TEXTES
+-----------------------------------*/
+
+#titre-dekstop{
+    margin-left: 15px; 
+}
+
+#titre-dekstop a{
+     text-decoration: none;
+    color: #0f0c0c;
+}
+
+#paragraphe-secondaire{
+    font-size: 15px;
+    line-height: 1.8;
+    color: #5f6368;
+}
+
+
+
+#ready{
+    margin-bottom: 30px;
+    
+}
+
+
+
+.call-to-action{
+    padding: 50px 5%;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+}
+.titre-principale h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.titre-milieu {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.titre h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    
+}
+
+.paragraphe  {
+    font-size: 22px;
+    line-height: 1.9;
+    color: #5f6368;
+    padding-bottom: 20px;
+}
+
+
+
+
+/* ---------------------------------
+   5. BOUTONS
+-----------------------------------*/
+
+:root {
+    --secondary-color: #1a0f0f ;
+    --text-color: #c7b7b7;
+}
+
+button {
+    /* margin: 10px; */
+    cursor: pointer;
+    border: none;
+    /* padding: 12px 24px; */
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+
+#btn-dekstop{
+    border:2px solid #0f0c0c;
+    border-radius: 6px;
+}
+
+#btn-dekstop:hover{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+
+.btn{
+    border:2px solid #141212;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+
+.btn:hover{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* ---------------------------------
+   6. IMAGES
+-----------------------------------*/
+
+.logos{
+    margin: 10px;
+    
+}
+
+.photo-gauche{
+    display: flex;
+    justify-content: left;
+}
+
+
+.photo-droite img,
+.photo-gauche img {
+    width: 100%;
+    max-width: 550px;
+    min-width: 350px;
+    border-radius: 8px;
+}
+
+
+
+
+/* ----------------------------------------
+   7. FOOTER 
+-----------------------------------------*/
+
+
+#small{
+    display: block;
+    margin-top: 35px;
+    text-align: center;
+}
+
+
+li{
+    display: block;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer {
+    padding: 50px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+   
+   
+}
+
+.footer-list{
+    display: flex;
+    gap: 80px;              /* espace entre les deux listes */
+    justify-content: center;
+    flex-wrap: wrap;        /* responsive */
+}
+
+
+
+
+
+/* ---------------------------------
+   8. RESPONSIVE
+-----------------------------------*/
+
+/* ---------------------------------
+   📱 MOBILE (max 600px)
+-----------------------------------*/
+@media (max-width: 800px) {
+
+    /* NAVBAR */
+    #navbar {
+        flex-direction: column;
+        margin: 15px 10px 0 10px;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .navbar {
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    .menu-bouton-nav button {
+        padding: 10px 15px;
+        font-size: 12px;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+
+
+    /* SECTIONS */
+    section {
+        padding: 35px 20px;
+        text-align: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .titre-principale h1 {
+        font-size: 32px;
+    }
+
+    .paragraphe p {
+        font-size: 16px;
+    }
+
+    /* BOUTONS
+    .menu-bouton {
+        flex-direction: column;
+        width: 100%;
+    } */
+
+    /* .menu-bouton button {
+        width: 100%;
+    } */
+
+    /* IMAGES */
+    .photo-droite img,
+    .photo-gauche img {
+        width: 100%;
+        max-width: 350px;
+        min-width: auto;        /* éviter les débordements en mobile */
+    }
+
+    /* FOOTER */
+    .footer-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .footer{
+        border-top: 2px solid #0f0c0c;
+        gap: 40px;
+    }
+
+    footer .call-to-action{
+        padding: 15px;
+
+    }
+
+}
+
+
+/* ---------------------------------
+   📱📟 TABLETTES (601px – 999px)
+-----------------------------------*/
+ @media (min-width: 801px) and (max-width: 999px) {
+
+    /* NAVBAR */
+    #navbar {
+        margin: 15px 10px 0 10px;
+        gap: 10px;
+    }
+
+    .navbar {
+        height: 75px;
+    }
+
+    .menu-bouton-nav button {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    /* SECTIONS */
+    section {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    /* IMAGES */
+    .photo-droite img,
+    .photo-gauche img {
+        width: 80%;
+        max-width: 450px;
+    }
+}
+
+
+/* ---------------------------------
+   💻 ORDINATEURS MOYENS (1000px – 1499px)
+-----------------------------------*/
+@media (min-width: 1000px) and (max-width: 1499px) {
+
+    .photo-droite img,
+    .photo-gauche img {
+        width: 100%;
+        max-width: 550px;
+        min-width: 350px;
+    }
+}
+
+/* -----------------------
+    9. MENU BURGER/AVEC CHATGPT
+ ------------------------*/
+
+/* Hide checkbox */
+#menu-toggle { display: none; }
+
+/* Hide burger on desktop */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    width: 35px;
+    height: 25px;
+    position: relative;
+    z-index: 2001;
+}
+
+.menu-icon .line {
+    width: 100%;
+    height: 4px;
+    background: #202124;
+    border-radius: 5px;
+    position: absolute;
+    transition: 0.4s ease;
+}
+
+.menu-icon .top    { top: 0; }
+.menu-icon .middle { top: 10px; }
+.menu-icon .bottom { bottom: 0; }
+
+.menu-fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    backdrop-filter: blur(14px);
+    background: rgba(255, 255, 255, 0.65);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-40px);
+    transition: 0.45s ease;
+    z-index: 2000;
+}
+
+.menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+
+}
+
+.menu-links a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #202124;
+    transition: 0.3s;
+}
+
+.menu-links a:hover {
+    color: #1a73e8;
+}
+
+
+
+@media (max-width: 800px) {
+
+    /* hide desktop nav */
+    .nav-desktop {
+        display: none;
+    }
+
+    /* show burger */
+    .menu-icon {
+        display: block;
+    }
+
+    /* FULLSCREEN MENU OPEN */
+    #menu-toggle:checked ~ .menu-fullscreen {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    /* BURGER ANIMATION → CROSS */
+    #menu-toggle:checked + .menu-icon .top {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    #menu-toggle:checked + .menu-icon .middle {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked + .menu-icon .bottom {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+}
